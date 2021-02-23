@@ -1,50 +1,75 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="Style.css"/>
         <title>Reservia</title>
     </head>
 
     <body>
         <div id="bloc_page">
-            <header>
-                <img src="Images/Reservia@3x.png" alt="Reservia" />
-                <nav>
-                    <ul>
-                        <li><a href="#">Hébergement</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
-                    </ul>
-                </nav>
 
-                <form>
-                    <p>
-                        <label for="Rechercher">Rechercher</label>
-                        <input type="text" name="Rechercher" id="Rechercher" maxlength="5" placeholder="Marseille, France" />
-                    </p>
-                </form>
+<!--Header-->
+
+        <header>
+            <div id="titre principal">
+                <div id="logo">  
+                    <img src="Images/Reservia@3x.png" alt="Reservia" />
+                </div>
+
+                    <nav>
+                        <div class="flex">
+                          <ul>
+                            <div class="Hébergements"><li><a href="#">Hébergement</a></li></div>
+                            <div class="Hébergements"><li><a href="#">Activités</a></li></div>
+                            <div class="Hébergements"><li><a href="#">S'inscrire</a></li></div>
+                          </ul>
+                        </div>  
+                    </nav>
+            </div>
+
+<!--Seach section-->
+                <section class="search">
+                    <div class="button_recherche">
+                        <span class="pin-icone"><i class="fas fa-map-marker-alt"></i></span>
+                        <form method="POST" action="#" class="Recherche">
+                            <input class="button_recherche_input" type="search" name="recherche" value="Marseille, France" autofocus>
+                            <input type"sumit" class="button_recherche_input_submit" value="Rechercher">
+                        </form>
+                        <span class="button_recherche_loupe"><i><i class=fas fa-search"></i></i></span>    
+                    </div>
+                            
+                </section>
+                    
+                    
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>
 
-                <ul>
-                    <li><strong>Filtres</strong></li>
-                    <li><a href="#">économique</a></li>
-                    <li><a href="#">familial</a></li>
-                    <li><a href="#">romantique</a></li>
-                    <li><a href="#">animaux autorisés</a></li>
-               </ul>
-               
+                </section>
+
+<!--Filter section-->
+
+            <div id="menu2"  
+                <h2>Filtres</h2>      
+                    <ul>
+                        <li><a href="#">Économique</a></li>
+                        <li><a href="#">Familial</a></li>
+                        <li><a href="#">Romantique</a></li>
+                        <li><a href="#">Animaux autorisés</a></li>
+                    </ul>
+            </div>
+
                <p>Plus de 500 logements sont disponibles dans cette ville</p>
           
-            </header>
+        </header>
 
+<!--Main accommodation-->          
             <section>
                 <article>
                     <h1>Hébergement à Marseille</h1>
                     <a href="#">Afficher plus</a>
 
-                    <div id="conteneur">
+                    <div id="conteneur2">
                         <div class="element 1">Auberge La Cannebière</div>
                         <div class="element 2">Hôtel du port</div>
                         <div class="element 3">Hôtel Les mouettes</div>
@@ -54,34 +79,48 @@
                     </div>
                 </article>
 
+<!--Aside section-->
                 <aside>
                     <h1>Les plus populaires</h1>
                 </aside>
             </section>
 
+<!--Activity section-->
             <section>
                 <h1>Activités à Marseille</h1>
             </section>
 
 
+<!--Footer-->
+
             <footer>
-                <div id="Conteneur2"><A propos>
-                    <h3>A propos</h1>
-                    <div class="element1"><a href="#"class="">Fonctionnement du site</a></h3></div>
-                    <div class="element1"><a href="#"class="">Conditions générales de vente</a></h3></div>
-                    <div class="element1"><a href="#"class="">Données et confidentialité</a></h3></div>
-                </div>
+                <div id="conteneur">
+                     <div class="A propos">
+                        <ul>
+                            <li><strong>A propos</strong></li>
+                            <li>Fonctionnement du site</li>
+                            <li>Conditions générales de vente</li>
+                            <li>Données et confidentialité</li>
+                        </ul>
+                     </div>
 
-                <div id="Nos hébergements">
-                    <h3>Nos hébergements</h1>
-                    <a href="#"class="">Charte qualité</a>
-                    <a href="#"class="">Soumettre votre hôtel</a>
-                </div>
+                    <div class="Nos hébergements">
+                        <ul>
+                            <li><strong>Nos hébergements</strong></li>
+                            <li>Nos hébergements</li>
+                            <li>Charte qualité</li>
+                            <li>Soumettre votre hôtel</li>
+                        </ul>
 
-                <div id="Assistance">
-                    <h3>Assistance</h1>
-                    <a href="#"class="">Centre d'aide</a>
-                    <a href="#"class="">Nous contacter</a>
+                    </div>
+
+                    <div class="Assistance">
+                        <ul>
+                            <li><strong>Assistance</strong></li>
+                            <li>Centre d'aide</li>
+                            <li>Nous contacter</li>
+                        </ul>
+                    </div>
                 </div>
             </footer>
         </div>

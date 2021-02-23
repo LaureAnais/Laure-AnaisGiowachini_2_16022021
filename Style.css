@@ -1,0 +1,165 @@
+/* Définition des polices personnalisées */
+@font-face
+{
+
+}
+
+@font-face
+{
+
+}
+
+/* Eléments principaux de la page */
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    font-family: 'Raleway' , Arial, Helvetica, sans-serif ;
+    color: #181818;
+    padding: 10;
+    margin: 10;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#blocpage
+{
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+section h1, footer h1, nav a 
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+/* Header */
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    height: 55px;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+#logo img
+{}
+
+
+
+/* Nav Section */
+.flex 
+{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.flex div
+{
+    width: 100px;
+    border: solid 1px #000;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    list-style-type: none; 
+}
+
+nav a
+{
+   font-size: 1.2em;
+   color: #b1b1b1; 
+   text-decoration: none;
+}
+nav a:hover
+{
+    color:#DEEBFF;
+    border-bottom: 3px #0065fc;
+    list-style-type: none; 
+}
+
+/* Search Section */
+
+/* Filter Section */
+
+/* Main Accommodation */
+
+{
+    border: 2px solid #444;
+    background-color: white;
+}
+
+.element
+ {
+     width: 150px;
+     height: 100px;
+ }
+
+ 
+ /* Aside section */
+
+
+
+
+/* Activity section */
+
+
+ /* Footer */
+#conteneur
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    padding-top: 15px;
+    background-color: #f2f2f2;
+    border: 2px #f2f2f2;
+}   
+
+
+
+ul:hover /* Footer - Liens par défaut (non survolé) */
+{
+    list-style-type: none; 
+    text-decoration: none;
+    color:black;
+   
+}
+
+/* Footer - celui qui est survolé */
+ul:hover 
+{
+    list-style-type: none;     
+    text-decoration: underline;
+    color:black;
+}
