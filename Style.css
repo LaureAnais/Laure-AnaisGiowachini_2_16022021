@@ -62,49 +62,53 @@ section h1, footer h1, nav a
 
 #logo
 {
-    height: 55px;
-    margin-top: 30px;
-    margin-left: 5%;
+    margin-left: 5px;
+    flex-direction: row;
+    align-items: baseline;
+    position: relative;
 }
 
-#logo img
-{}
+#logo, img
+{
+    width: 75px;
+    height: 80px;
+    padding-top: 20px;
+    position: relative;
+    top: -50px; 
+}
 
 
 
 /* Nav Section */
-.flex 
+.header _bar
 {
     display: flex;
-    width: 300px;
+    justify-content: flex-end;
+}
+
+.header_nav
+{
+    display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
-.flex div
+.flex-gap
 {
-    width: 100px;
-    border: solid 1px #000;
-}
-
-nav ul
-{
-    list-style-type: none;
-}
-
-nav li
-{
-    list-style-type: none; 
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 nav a
 {
    font-size: 1.2em;
-   color: #b1b1b1; 
+   color: rgba(0, 0, 0, 0.425); 
    text-decoration: none;
 }
 nav a:hover
 {
-    color:#DEEBFF;
+    color:#0065fc;
     border-bottom: 3px #0065fc;
     list-style-type: none; 
 }
