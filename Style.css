@@ -182,14 +182,36 @@ nav a:hover
 
 
 /* Search Section */
+.Search div 
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 20px; 
+    color: rgba(128, 128, 128, 0.849);
+}
+
+.search_map-maker i
+{
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 50px;
+    border-radius: 17% 0% 0% 17%;
+    display: flex;
+    font-size: large;
+}
 
 /* Filter Section */
-.Filter div , ul
+.Filter div , ul , p
 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row; 
     justify-content: right;
 }
+
 
 /* Filter section - Liens par défaut (non survolé) */
 ul:active
@@ -208,20 +230,9 @@ ul:active
     color:black;
 }
 
-/* Search Section */
-.Search div , p
-{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 20px; 
-    color: rgba(128, 128, 128, 0.849);
-}
 
 /* Main Accommodation */
-
+/* Problème s'applique sur l'ensemble de la page*/
 {
     border: 2px solid #444;
     background-color: white;
@@ -233,14 +244,58 @@ ul:active
      height: 100px;
  }
 
- 
+
+ #conteneur2 
+{
+    display:flex;
+    flex-wrap: column;
+    justify-content: left;
+    padding-top: 15px;
+    background-color:#f2f2f2 ;
+}
+
  /* Aside section */
-
+ #conteneur3
+ {
+     display:flex;
+     flex-wrap: column;
+     justify-content: left;
+     padding-top: 15px;
+     background-color:#f2f2f2 ;
+ }
 /*Mettre elements child pour faire des flexbox*/
+.element:nth-child(1)
+{ 
+    order: 1;
+    width: 50%;
+    height: 60%;
+    background-color: #0065fc;
+}
 
+.element:nth-child(2)
+{
+    order:2;
+    width: 50px;
+    height: 20%;
+    background-color: aqua;
+}
+
+.element:nth-child(3)
+{
+    order:3;
+    width: 50px;
+    height: 20%;
+    background-color: bisque;
+}
 
 /* Activity section */
-
+#conteneur4
+{
+    display:flex;
+    flex-wrap: column;
+    justify-content: left;
+    padding-top: 15px;
+}
 
  /* Footer */
 #conteneur
