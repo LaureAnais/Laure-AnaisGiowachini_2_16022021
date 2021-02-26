@@ -59,13 +59,12 @@ h2
     align-items: flex-end; 
 }
 
-#titre_principal
+.header 
 {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
-
-#logo
+.logo
 {
     margin-left: 5px;
     flex-direction: row;
@@ -73,124 +72,53 @@ h2
     position: relative;
 }
 
-#logo, img
+.logo, img
 {
-    width: 100px;
+    width: 150px;
     height: 60px;
-    position: relative;
 }
 
-
-
-/* Nav Section */
-.header_bar
-{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-}
+/* la couleur du texte #444 ne s'applique pas sans le hover */
 
 .header_nav
 {
     display: flex;
+    color:#444;
     width: 500px;
+    margin-top: 30px;
     justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
     flex-wrap: wrap;
     }
 
-.flex-gap
-{
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-nav a
-{
-   font-size: 1.2em;
-   color: rgba(0, 0, 0, 0.425); 
-   border-bottom: 3px #0065fc;
-   padding-bottom: 10px;
-   text-decoration: none;
-}
-nav a:hover
+    /* Mettre de l'espace dans le survol des liens avec le border top solid */
+.header_nav :hover
 {
     color:#0065fc;
-    border-bottom: 3px #0065fc;
+    border-top: solid 3px #0065fc;
     padding-bottom: 10px;
-    position: relative;
     list-style-type: none; 
+    margin-right: 20px;
+    margin-left: 20px;
     transition: 0.5s;
-}
+     }    
 
-.accommodation_link
+nav a , ul
 {
-    width: 35%;
+   font-size: 1.1em;
+   color:#444; 
+   margin-right: 10px;
+   margin-left: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+nav a , ul :hover
+{
+    color:#0065fc;
+    padding-bottom: 10px;
     text-align: center;
-    position: relative;
     transition: 0.5s;
-}
-
-.accommodation_link :hover
-{
-    width: 35%;
-    text-align: center;
-    border-bottom: solid 3px #0065fc;
-    color: #0065fc;
-    padding-bottom: 20px;
-    position: relative;
-    transition: 0.5s;
-}
-
-.Activity_link
-{
-    width: 35%;
-    text-align: center;
-    position: relative;
-    transition: 0.5s;
-}
-
-.Activity_link :hover
-{
-    width: 35%;
-    text-align: center;
-    border-bottom: solid 3px #0065fc;
-    padding-bottom: 20px;
-    position: relative;
-    transition: 0.5s;
-}
-
-.Subscribe_link
-{
-    width: 30%;
-    text-align: center;
-    color: #0065fc;
-    position: relative;
-    transition: 0.5s;
-}
-
-.Subscribe_link :hover
-{
-    width: 30%;
-    text-align: center;
-    color: #0065fc;
-    border-bottom: solid 3px #0065fc;
-    padding-bottom: 20px;
-    position: relative;
-    transition: 0.5s;
-}
-
-
-/* Search Section */
-.Search div 
-{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 20px; 
-    color: rgba(128, 128, 128, 0.849);
 }
 
 .search_map-maker i
@@ -208,8 +136,6 @@ nav a:hover
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:row; 
-    justify-content: right;
 }
 
 
@@ -219,6 +145,7 @@ ul:active
     list-style-type: none; 
     text-decoration: none;
     color:black;
+    background-color: #deebff;
    
 }
 
@@ -228,97 +155,61 @@ ul:active
     list-style-type: none;     
     text-decoration: underline;
     color:black;
+    background-color: #deebff;
 }
 
+/* intégrer bouton*/
 
 /* Main Accommodation */
 /* Problème s'applique sur l'ensemble de la page*/
+.main_accommodation
 {
+    display: flex;
     border: 2px solid #444;
-    background-color: white;
-}
 
-.element
- {
-     width: 150px;
-     height: 100px;
- }
-
-
- #conteneur2 
+#conteneur2 
 {
-    display:flex;
-    flex-wrap: column;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     padding-top: 15px;
     background-color:#f2f2f2 ;
+    border-radius: 7px;
 }
 
  /* Aside section */
- #conteneur3
- {
-     display:flex;
-     flex-wrap: column;
-     justify-content: left;
-     padding-top: 15px;
-     background-color:#f2f2f2 ;
- }
-/*Mettre elements child pour faire des flexbox*/
-.element:nth-child(1)
-{ 
-    order: 1;
-    width: 50%;
-    height: 60%;
-    background-color: #0065fc;
+aside
+{
+    display: flex;
+    flex-direction: column;
 }
 
-.element:nth-child(2)
-{
-    order:2;
-    width: 50px;
-    height: 20%;
-    background-color: aqua;
-}
 
-.element:nth-child(3)
-{
-    order:3;
-    width: 50px;
-    height: 20%;
-    background-color: bisque;
-}
-
-/* Activity section */
-#conteneur4
-{
-    display:flex;
-    flex-wrap: column;
-    justify-content: left;
-    padding-top: 15px;
-}
 
  /* Footer */
 #conteneur
 {
-    display: flex;
+    display: inline-flex;
     flex-wrap: column;
+    column-count: 3;
     justify-content: left;
     padding-top: 15px;
     background-color: #f2f2f2;
     border: 2px #f2f2f2;
     width: 100%;
+    border-radius: 1px;
 }   
 
 #li
 {
-    display: flex;
+    display: inline-flex;
     flex-wrap: column;
     justify-content: normal;
 }   
 
 
 /* Footer - Liens par défaut (non survolé) */
-ul:hover 
+a
 {
     list-style-type: none; 
     text-decoration: none;
@@ -327,9 +218,9 @@ ul:hover
 }
 
 /* Footer - celui qui est survolé */
-ul:hover 
+a:hover 
 {
     list-style-type: none;     
-    text-decoration: underline;
-    color:black;
+    text-decoration: none;
+    color:#0065fc;
 }
