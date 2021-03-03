@@ -57,6 +57,13 @@ h2
     font-weight: 12px;
 }
 
+p
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 12px; 
+}
+
+
 /* Header */
 
 {
@@ -73,57 +80,42 @@ h2
 .logo
 {
     margin-left: 5px;
-    flex-direction: row;
-    align-items: baseline;
-    position: relative;
+
 }
 
 .logo, img
 {
-    width: 150px;
     height: 60px;
 }
 
-/* la couleur du texte #444 ne s'applique pas sans le hover */
-
+  /* Nav */  
 .header_nav
 {
     display: flex;
+    flex-direction: row-reverse;
     color:#444;
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
     }
+   
 
-    /* Mettre de l'espace dans le survol des liens avec le border top solid */
-.header_nav :hover
+ .nav_list, .subscribe 
 {
-    color:#0065fc;
+    font-size: 1.1em;
+    color:#444;
+}
+
+    /* Nav au survol */ 
+
+.nav_list :hover, .subscribe :hover
+{
     border-top: solid 3px #0065fc;
-    padding: 2rem;
-    padding-bottom: 10px;
-    list-style-type: none; 
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 0.2s;
-     }    
-
-.header_nav a , .header_nav ul
-{
-   font-size: 1.1em;
-   color:#444; 
-   margin-right: 10px;
-   margin-left: 10px;
-   padding-left: 10px;
-   padding-right: 10px;
-}
-nav a , ul :hover
-{
     color:#0065fc;
     padding-bottom: 10px;
-    text-align: center;
-    transition: 0.2s;
+    padding-top: 20px;
+
 }
+
+
 
 .search_map 
 {
@@ -152,7 +144,7 @@ nav a , ul :hover
 
 
 /* Filter Section */
-.Filter div , ul , p
+.Filter div , .Filter ul
 {
     display: flex;
     flex-wrap: wrap;
@@ -341,6 +333,8 @@ footer a :hover
     color:#0065fc;
 }
 
+
+/*
 @media screen and (max-width: 1024px) {
     #bloc_page {
         width: auto;
