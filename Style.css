@@ -13,11 +13,17 @@ src: url('polices/Raleway-Bold.ttf') format(truetype);
 font-weight: 700;
 }
 
+
 /* Eléments principaux de la page */
 html
 {
     font-size: 16px;
 }
+
+*{
+    margin:0px;
+    padding:0px;
+    }
 
 body
 {
@@ -95,14 +101,34 @@ p
     flex-direction: row-reverse;
     color:#444;
     margin-right: 10px;
+    padding-left: 10px;
     }
-   
 
- .nav_list, .subscribe 
+.header_nav a
 {
-    font-size: 1.1em;
+    margin-right: 30px;
     color:#444;
 }
+
+#header_list
+{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav_list, .subscribe 
+{
+    font-size: 1.1em;
+    padding-top: 20px;
+    color:#444;
+}
+
+.subscribe 
+{
+    margin-top: 20px;
+}
+
 
     /* Nav au survol */ 
 
@@ -110,10 +136,11 @@ p
 {
     border-top: solid 3px #0065fc;
     color:#0065fc;
-    padding-bottom: 10px;
     padding-top: 20px;
+    padding: 20px 10px 0px 10px;
 
 }
+
 
 
 
@@ -336,42 +363,52 @@ footer a :hover
 
 /*
 @media screen and (max-width: 1024px) {
-    #bloc_page {
-        width: auto;
-    }
+#blocpage {
+    width: auto;
+}   
 
     .header_nav {
         width: auto;
         text-align: left;
         flex-flow: wrap;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px;
+       
     }
 
-    .header_nav ul {
-        
+    .nav_list :hover {
+        border-top: none;
+        padding-top: 0px;
+        border-bottom: solid 3px #0065fc;
+        padding-bottom: 20px;
+    }    
+
+    .subscribe :hover {
+        border-top: none;
+        padding-top: 0px;
     }
-
-    aside {
-        text-align: center;
-    }
-
-
-
-
-
-}
-
-
-
+ 
+*/
 @media screen and (max-width: 740px) {
-
-}
-
-
-
-
-@media screen and (max-width: 860px) {
-
-}
+    
+    #blocpage {
+        width: auto;
+    }   
+    
+        .header_nav {
+            width: auto;
+            text-align: left;
+            flex-flow: wrap;
+           
+        }
+    
+        .nav_list :hover {
+            border-top: none;
+            padding-top: 0px;
+            border-bottom: solid 3px #0065fc;
+            padding-bottom: 20px;
+        }    
+    
+        .subscribe :hover {
+            border-top: none;
+            padding-top: 0px;
+        }
+     
