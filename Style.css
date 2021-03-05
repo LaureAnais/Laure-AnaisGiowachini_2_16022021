@@ -29,8 +29,6 @@ body
 {
     font-family: 'Raleway-VariableFont' , Arial, Helvetica, sans-serif ;
     color: #181818;
-    padding: 10;
-    margin: 10;
     box-sizing: border-box;
 }
 
@@ -81,8 +79,12 @@ p
 .header 
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    background-image: url("logos/Reservia@3x.png");
+    background-repeat: no-repeat;
+    background-size: 200px 100px;
 }
+    
 .logo
 {
     margin-left: 5px;
@@ -106,7 +108,6 @@ p
 
 .header_nav a
 {
-    margin-right: 30px;
     color:#444;
 }
 
@@ -121,26 +122,33 @@ p
 {
     font-size: 1.1em;
     padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     color:#444;
+    border-top: solid 3px white;
 }
 
 .subscribe 
 {
     margin-top: 20px;
+  
 }
 
-
+.subscribe a {
+    color: #0065fc;
+}
     /* Nav au survol */ 
 
-.nav_list :hover, .subscribe :hover
+.nav_list:hover
 {
-    border-top: solid 3px #0065fc;
+    border-color: #0065fc;
     color:#0065fc;
-    padding-top: 20px;
-    padding: 20px 10px 0px 10px;
-
 }
 
+.nav_list a:hover
+{
+    color: #0065fc;
+}
 
 
 
@@ -394,21 +402,34 @@ footer a :hover
     }   
     
         .header_nav {
-            width: auto;
-            text-align: left;
-            flex-flow: wrap;
-           
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-top: none;
         }
     
-        .nav_list :hover {
-            border-top: none;
-            padding-top: 0px;
-            border-bottom: solid 3px #0065fc;
+        .nav_list {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            border-bottom: solid 3px lightgrey;
             padding-bottom: 20px;
+        }
+        .nav_list:hover {
+            border-top: none;
+            border-bottom: solid 3px #0065fc;
+            padding-bottom: 30px;
         }    
     
-        .subscribe :hover {
+        .subscribe:hover {
             border-top: none;
-            padding-top: 0px;
+            border-bottom: none;
         }
-     
+        
+        .subscribe {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 70px;
+        }
+    
+    }        
