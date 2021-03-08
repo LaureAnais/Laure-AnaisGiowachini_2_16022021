@@ -152,30 +152,38 @@ p
 
 
 
-.search_map 
+#search_button 
 {
     display: flex;
-    min-width: 60px;
-    justify-content: left;
+    padding: 5px 5px;
     align-items: center;
-    background-color: #f2f2f2;
-    font-size: 1.2rem;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
 }
 
 
-.search_map-maker i
+.search_map-maker 
 {
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    border-left: 2px solid #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right-color: #f2f2f2;
+    padding: 6px 15px;
+    padding-left: 15px;
     background-color: #f2f2f2;
-    height: 30px;
-    width: 30px;
-    border-radius: 17% 0% 0% 17%;
-    display: flex;
-    justify-content: center;
-    font-size: large;
+    padding-left: 30px;
+    height: 21px;
 }
 
+.icon_right
+{
+    padding: 7px 12px;
+    color: white;
+    border:  solid 2px #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+}
 
 
 /* Filter Section */
@@ -211,25 +219,19 @@ ul:active
 .main_accommodation
 {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
     margin-right: 5px;
     margin-left: 5px;
 }
 
-.marseille_accomodation
-{
-    width: 60%;
-}
 
 article 
 {
+    width: 66%;
     background-color: #f2f2f2;
     justify-content: left;
     padding-top: 15px;
     padding-left: 15px;
     border-radius: 7px;
-    width: 780px;
 
 }
 
@@ -237,16 +239,56 @@ article
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    align-content: space-around;
     padding-top: 15px;
     background-color:#f2f2f2;
     border-radius: 7px;
+}
+
+.conteneur2 div {
+    background-color: white;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 100%;
+}
+
+
+.aubergecannebiere
+{
+    width: 16.667%;
+}
+
+.hotelduport
+{
+    width: 16.667%;
+}
+
+.hotellesmouettes
+{
+    width: 16.667%;
+}
+
+.hoteldelamer
+{
+    width: 16.667%;
+}
+
+
+.aubergelepanier
+{
+    width: 16.667%; 
+}
+
+.hotelamina
+{
+    width: 16.667%;
 }
 
 
  /* Aside section */
 aside
 { 
+    width: 31%;
     background-color: #f2f2f2;
     border-radius: 7px;
     padding: 10px;
@@ -275,7 +317,6 @@ aside img
 
 .conteneur3 div 
 {
-    width: 350px;
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -283,6 +324,8 @@ aside img
 .hoteldumatin
 {
     display: flex;
+    height: 33.333%;
+    width: 100%;
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
@@ -294,6 +337,8 @@ aside img
 .hoteldeleau
 {
     display: flex;
+    height: 33.333%;
+    width: 100%;
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
@@ -305,6 +350,8 @@ aside img
 .hotelbleublanc
 {
     display: flex;
+    height: 33.333%;
+    width: 100%;
     padding: 0.375rem;
     background-color:white;
     border: 2px white;
@@ -326,24 +373,37 @@ aside img
  /* Footer */
  {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end; 
 }
 
  .conteneur
 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #f2f2f2;
     border: 2px #f2f2f2;
-    width: 100%;
     border-radius: 1px;
-    height: 200px;
 }   
+
+.about
+{
+    width: 33.333%;
+}
+
+.accommodation 
+{
+    width: 33.333%;
+}
+
+.help
+{
+    width: 33.333%;
+}
+
 
 /* Footer - lien */
  footer ul
  {
-     display: flex;
      padding: 2rem 1rem;
      margin-right: 160px;
      justify-content: space-between;
@@ -357,15 +417,15 @@ footer a
     list-style-type: none; 
     text-decoration: none;
     color:black;
-   
 }
 
 /* Footer - celui qui est survolé */
-footer a :hover 
+footer a:hover 
 {
     list-style-type: none;     
     text-decoration: none;
     color:#0065fc;
+    padding-bottom: 15%;
 }
 
 
