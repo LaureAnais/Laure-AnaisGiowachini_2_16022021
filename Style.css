@@ -74,6 +74,7 @@ p
     display: flex;
     justify-content: space-between;
     align-items: flex-end; 
+
 }
 
 .header 
@@ -150,6 +151,12 @@ p
     color: #0065fc;
 }
 
+.header_title
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
 
 
 #search_button 
@@ -159,6 +166,17 @@ p
     align-items: center;
 }
 
+#search
+{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    height: 36px;
+}
 
 .search_map-maker 
 {
@@ -169,9 +187,7 @@ p
     border-bottom-left-radius: 15px;
     border-right-color: #f2f2f2;
     padding: 6px 15px;
-    padding-left: 15px;
     background-color: #f2f2f2;
-    padding-left: 30px;
     height: 21px;
 }
 
@@ -183,37 +199,92 @@ p
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #0065FC;
+    cursor: pointer;
 }
 
+.icon_right a
+{
+    color: white;
+}
 
 /* Filter Section */
-.Filter div , .Filter ul
+.conteneur_filter
 {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 10px;
 }
 
-
-/* Filter section - Liens par défaut (non survolé) */
-ul:active
+.block_filter
 {
-    list-style-type: none; 
-    text-decoration: none;
-    color:black;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    border: 3px solid #f2f2f2;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding: 0px 10px 0 0;
+}
+
+.conteneur_icon_filter
+{
+    display: flex;
+    color:#0065fc;
+    justify-content: center;
+    align-items: center;
     background-color: #deebff;
-   
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #deebff;
+    position: relative;
+    right: 8px;
+}    
+
+.conteneur_text_filter
+{
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.text_filter
+{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Filter section - celui qui est survolé */
-ul:active
+.block_filter:hover
 {
-    list-style-type: none;     
-    text-decoration: underline;
-    color:black;
-    background-color: #deebff;
+    background-color: #f2f2f2;
+}    
+
+/* info section*/
+.info
+{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    flex-wrap: nowrap;
 }
 
-/* intégrer bouton*/
+.info_wrapicon
+{
+    display: flex;
+    background-color: #ffffff;
+    color: #0065fc;
+    border: 1.5px solid #f2f2f2;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;  
+}
 
 /* Main Accommodation */
 .main_accommodation
@@ -225,7 +296,7 @@ ul:active
 
 .marseille_accommodation
 {
-    width: 100%;
+    flex-basis: 100%;
 }
 
 article 
@@ -236,18 +307,16 @@ article
     padding-top: 15px;
     padding-left: 15px;
     border-radius: 7px;
-
+    box-shadow: 0px 5px 10px #d9d9d9;
 }
 
 .conteneur2 
 {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
     padding-top: 15px;
     background-color:#f2f2f2;
     border-radius: 10px;
-    width: 100%;
 }
 
 .conteneur2 div {
@@ -255,14 +324,40 @@ article
     margin-bottom: 15px;
     margin-right: 15px;
     cursor: pointer;
+    width: 350px;
+    height: auto;
 }
 
+
+.main_accommodation img
+{
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 99%;
+    height: 12rem;
+    background-color: white;
+    object-fit: cover;;
+    border-color: white;
+    align-items: stretch;
+}
+
+.conteneur2 h3
+{
+    font-size: large;
+}
+
+.conteneur2 a:visited 
+{
+   color:black 
+}
 
 .aubergecannebiere
 {
     display: flex;
     flex-direction: column;
     width: 100px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px #d9d9d9;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .hotelduport
@@ -270,6 +365,9 @@ article
     display: flex;
     flex-direction: column;
     width: 100px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px #d9d9d9;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .hotellesmouettes
@@ -277,6 +375,9 @@ article
     display: flex;
     flex-direction: column;
     width: 100px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px #d9d9d9;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .hoteldelamer
@@ -284,6 +385,9 @@ article
     display: flex;
     flex-direction: column;
     width: 100px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px #d9d9d9;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 
@@ -292,6 +396,9 @@ article
     display: flex;
     flex-direction: column;
     width: 100px; 
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px #d9d9d9;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .hotelamina
@@ -299,6 +406,9 @@ article
     display: flex;
     flex-direction: column;
     width: 100px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px #d9d9d9;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 
@@ -308,7 +418,7 @@ aside
     width: 31%;
     background-color: #f2f2f2;
     box-shadow: 0px 5px 10px #d9d9d9;
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     padding: 20px;
     margin-left: 25px;
   
@@ -327,12 +437,12 @@ aside a
    text-decoration: #0065fc; 
 }
 
-aside img
+.conteneur3 img
 {
     border-radius: 1rem 0 0 1rem;
     position: relative;
     width: 150px;
-    height: 120px;
+    height: 170px;
     background-color: white;
     align-items: stretch;
 }
@@ -356,7 +466,7 @@ aside img
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
-    border-radius: 8px;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
     box-sizing: border-box;
     box-shadow: 0 0 16px #0000002e
 }
@@ -368,7 +478,7 @@ aside img
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
-    border-radius: 8px;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
     box-sizing: border-box;
     box-shadow: 0 0 16px #0000002e
 }
@@ -380,7 +490,7 @@ aside img
     padding: 0.375rem;
     background-color:white;
     border: 2px white;
-    border-radius: 8px;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
     box-sizing: border-box;
     box-shadow: 0 0 16px #0000002e;
 }
@@ -395,19 +505,85 @@ aside img
     color: grey;
 }
 
-.hoteldumatin_info
+ /* Activity section */
+
+ .activities
+ {
+    margin: 1rem;
+    padding: 1rem; 
+    flex-basis: 100%;
+ }
+
+ .title_activities
+ {
+     padding: 1rem;
+ }
+
+ .conteneur4
+ {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     cursor: pointer;
+ }
+
+
+ .conteneur4 img
+ {
+     width: 100%;
+     height: 12rem;
+     object-fit: cover;
+     border-radius: 1rem 1rem 0 0; 
+ }
+
+
+.large_activity
 {
-    align-items: center;
+    height: 100%;
+    max-width: 26rem;
 }
 
-.hoteldeleau_info
+.small_activity
 {
-
+    height: 13rem;
 }
 
-.hotelbleublanc
+.activity_text
 {
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    border-radius: 0 0 1rem 1rem; 
+    background-color: white;
+    box-shadow: 0px 5px 10px #d9d9d9;
+}
 
+
+.picture_vieuxport
+{
+    height: 35.5rem;
+}
+.picture_fort
+{
+    height: 12rem;
+}
+
+.picture_ile
+{
+    height: 12rem;
+}
+
+.picture_calanques
+{
+    height: 35.5rem;
+}
+
+.picture_notredame
+{
+    height: 12rem;
+}
+
+.picture_longchamp
+{
+    height: 12rem;
 }
 
  /* Footer */
@@ -418,21 +594,26 @@ aside img
  .footer
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    row-gap: 90px;
     margin-top: 50px;
     background-color: #f2f2f2;
     border: 2px #f2f2f2;
-    border-radius: 1px;
+    border-radius: 5px;
     height: 220px;
+    flex-basis: 100%;
 }   
+
+.footer h2
+{
+    padding-left: 15px;
+    font-size: larger;
+}
 
 .about
 {
     width: 33.333%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -441,6 +622,7 @@ aside img
     width: 33.333%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -449,6 +631,7 @@ aside img
     width: 33.333%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -458,23 +641,18 @@ aside img
  {
      padding: 2rem 1rem;
      margin-right: 160px;
-     justify-content: space-between;
 } 
 
 
 /* Footer - Liens par défaut (non survolé) */
 footer a 
 {
-    list-style-type: none; 
-    text-decoration: none;
     color:black;
 }
 
 /* Footer - celui qui est survolé */
 footer a:hover 
 {
-    list-style-type: none;     
-    text-decoration: none;
     color:#0065fc;
     padding-bottom: 15%;
 }

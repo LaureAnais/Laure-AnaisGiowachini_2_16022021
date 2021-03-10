@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/286aa622f1.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -29,14 +30,15 @@
             </div>
 
 <!--Search section-->
-                
+            <div class="header_title">   
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
+            </div> 
 
                 <form>
                     <div id="search_button">
                         <div class="search_map-maker"><i class="fas fa-map-marker-alt"></i></div>
-                        <input type="rechercher" id="search" name="" maxlength="5" placeholder="Marseille, France">
+                        <div><input type="search" id="search" name="" maxlength="8" placeholder="Marseille, France"></div>
                     <div class="icon_right"><a href="#">Rechercher</a></div> 
                     </div>  
                 </form>
@@ -44,18 +46,53 @@
 
 <!--Filter section-->
 
-            <div class="menu">      
-                <ul>
-                    <li><a href="#"><strong>Filtres</strong></a></li>
-                    <li><i class="fas fa-money-bill-wave"></i><a href="#">Économique</a></li>
-                    <li><i class="fas fa-child"></i><a href="#">Familial</a></li>
-                    <li><i class="fas fa-heart"></i><a href="#">Romantique</a></li>
-                    <li><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
-                </ul>
-            </div>
+            <section class="filter"></section>
+                <div class="conteneur_filter">
+                        <div class="text_filter">
+                            <span>Filtres</span>  
+                        </div>
+                        
+                        <div class="block_filter">
+                            <div class="conteneur_icon_filter">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="conteneur_text_filter">
+                                <span>Économique</span>
+                            </div>    
+                        </div>  
 
-            <div class="fa-info">
-                <div> <button class="fa-info_wrapicon"><i class="fas fa-info"></i></button></div>
+                        <div class="block_filter">
+                            <div class="conteneur_icon_filter">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <div class="conteneur_text_filter">
+                                <span>Familial</span>
+                            </div>    
+                        </div> 
+
+                        <div class="block_filter">
+                            <div class="conteneur_icon_filter">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="conteneur_text_filter">
+                                <span>Romantique</span>
+                            </div>    
+                        </div> 
+
+                        <div class="block_filter">
+                            <div class="conteneur_icon_filter">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <div class="conteneur_text_filter">
+                                <span>Animaux autorisés</span>
+                            </div> 
+                        </div>    
+                </div>                         
+        </section>    
+               
+
+            <div class="info">
+                <div><button class="info_wrapicon"><i class="fas fa-info"></i></button></div>
                 <p class="fa-infotext">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
@@ -139,7 +176,7 @@
                             </div>
                         </div>
                         <div class="hotelamina">
-                            <img src="images/hébergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo_hotel_chez_amina">
+                            <img src="images/hébergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo_hotel_chez_amina">
                             <div class="hotel_amina_info">
                                 <div><strong>Hôtel chez Amina</strong></div>
                                 <div>Nuit à partir de 96<strong>€</strong></div>
@@ -154,7 +191,7 @@
                         </div>
                     </div>
 
-                    <a href="#">Afficher plus</a>
+                    <h3><a href="#">Afficher plus</a></h3>
                 </article>
 
 <!--Aside section-->
@@ -213,15 +250,56 @@
 
 <!--Activity section-->
             <section>
-                <h1>Activités à Marseille</h1>
+                <div class="activities">
+                <div id="title_activities"><h1>Activités à Marseille</h1></div>
 
                 <div class="conteneur4">
-                    <div class="item 1">Vieux Port</div>
-                    <div class="item 2">Fort de Pomègues</div>
-                    <div class="item 3">Île de Frioul</div>
-                    <div class="item 4">Parc National des Calanques</div>
-                    <div class="item 5"><Notre-Dame-de-la-Garde></div>
-                    <div class="item 6">Parc Longchamp</div>
+                
+                <div class="activity1"></div>  
+
+                    <div class="vieuxport">
+                        <a href="#">
+                            <img class="picture_vieuxport" src="images/activités/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo_vieux_port">
+                            <div class="activity_text"><p>Vieux Port</p></div>
+                        </a>
+                    </div>
+
+                    <div class="large_activity">
+                        <a href="#">
+                            <img class="picture_fort" src="images/activités/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo_fort_de_pomegues">
+                            <div class="activity_text"><p>Fort de Pomègues</p></div>
+                        </a>
+                    </div>
+        
+                    <div class="small_activity">
+                        <a href="#">
+                            <img class="picture_ile" src="images/activités/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo_ile_de_frioul">
+                            <div class="activity_text"><p>Île de Frioul</p></div>
+                        </a>
+                    </div>
+
+                    <div class="large_activity">
+                        <a href="#">
+                            <img class="picture_calanques" src="images/activités/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo_parc_national_des_calanques">
+                            <div class="activity_text"><p>Parc National des Calanques</p></div>
+                        </a>
+                    </div>
+                    
+                    <div class="small_activity">
+                        <a href="#">
+                            <img class="picture_notredame" src="images/activités/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre_dame_de_la_garde">
+                            <div class="activity_text"><p>Notre-Dame-de-la-Garde</p></div>
+                        </a>
+                    </div>
+                    
+                    <div class="small_activity">
+                        <a href="#">
+                            <img class="picture_longchamp" src="images/activités/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"alt="photo_parc_longchamp">
+                            <div class="activity_text"><p>Parc Longchamp</p></div>
+                        </a>
+                    </div>
+                    
+                </div>
                 </div>
             </section>
 
@@ -231,8 +309,8 @@
             <footer>
                 <div class="footer">
                     <div class="about">
+                        <h2>A propos</h2>
                         <ul>
-                            <li><strong>A propos</strong></li>
                             <li><a href="#">Fonctionnement du site</a></li>
                             <li><a href="#">Conditions générales de vente</a></li>
                             <li><a href="#">Données et confidentialité</a></li>
@@ -240,8 +318,8 @@
                     </div>
 
                     <div class="accommodation">
+                        <h2>Nos hébergements</h2>
                         <ul>
-                            <li><strong>Nos hébergements</strong></li>
                             <li><a href="#">Nos hébergements</a></li>
                             <li><a href="#">Charte qualité</a></li>
                             <li><a href="#">Soumettre votre hôtel</a></li>
@@ -249,8 +327,8 @@
                     </div>    
 
                     <div class="help">
+                        <h2>Assistance</h2>
                         <ul>
-                            <li><strong>Assistance</strong></li>
                             <li><a href="#">Centre d'aide</a></li>
                             <li><a href="#">Nous contacter</a></li>
                         </ul>
