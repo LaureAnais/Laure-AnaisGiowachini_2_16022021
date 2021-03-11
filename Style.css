@@ -205,6 +205,7 @@ p
 .icon_right a
 {
     color: white;
+    font-size: medium;
 }
 
 /* Filter Section */
@@ -290,8 +291,8 @@ p
 .main_accommodation
 {
     display: flex;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .marseille_accommodation
@@ -299,17 +300,27 @@ p
     flex-basis: 100%;
 }
 
+.marseille_accommodation h1
+{
+    font-size: 30px;
+    margin: 5px;
+    padding: 15px;
+
+}
 article 
 {
     width: 66%;
     background-color: #f2f2f2;
-    justify-content: left;
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 25px;
     border-radius: 7px;
     box-shadow: 0px 5px 10px #d9d9d9;
 }
 
+.article h3, a
+{
+ color: #181818;
+ font-size: 24px;
+}
 .conteneur2 
 {
     display: flex;
@@ -335,9 +346,10 @@ article
     width: 99%;
     height: 12rem;
     background-color: white;
-    object-fit: cover;;
+    object-fit: cover;
     border-color: white;
     align-items: stretch;
+    margin-bottom: 10px;
 }
 
 .conteneur2 h3
@@ -415,54 +427,60 @@ article
  /* Aside section */
 aside
 { 
-    width: 31%;
+    width: 30%;
     background-color: #f2f2f2;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     padding: 20px;
-    margin-left: 25px;
+    margin-left: 45px;
   
 }
 
 aside h1
 {
+font-size: 30px;
 margin: 5px;
-padding: 5px;
+padding: 15px;
 display: flex;
 justify-content: space-between;
 }
 
 aside a
 {
-   text-decoration: #0065fc; 
+   text-decoration: black; 
 }
 
 .conteneur3 img
 {
     border-radius: 1rem 0 0 1rem;
     position: relative;
-    width: 150px;
-    height: 170px;
+    width: 40%;
+    height: 100%;
     background-color: white;
-    align-items: stretch;
+    object-fit: cover;
 }
 .conteneur3
 {
-    display: inline-block;
     flex-direction: column;
     cursor: pointer;
+    height: 900px;
 }
 
 .conteneur3 div 
 {
     margin-left: 10px;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
+.title_hotel_size
+{
+    font-size: 21px;
+}
 .hoteldumatin
 {
     display: flex;
-    height: 28%;
+    height: 31%;
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
@@ -474,7 +492,7 @@ aside a
 .hoteldeleau
 {
     display: flex;
-    height: 28%;
+    height: 31%;
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
@@ -486,7 +504,7 @@ aside a
 .hotelbleublanc
 {
     display: flex;
-    height: 28%;
+    height: 31%;
     padding: 0.375rem;
     background-color:white;
     border: 2px white;
@@ -497,11 +515,13 @@ aside a
 
 .etoiles 
 {
+    padding-top: 25px;
     color: #0065fc;
 }
 
 .etoilegrise
 {
+    padding-top: 25px;
     color: grey;
 }
 
@@ -512,26 +532,62 @@ aside a
     margin: 1rem;
     padding: 1rem; 
     flex-basis: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
  }
 
- .title_activities
+ #title_activities
  {
-     padding: 1rem;
+     
+     margin-bottom: 25px;
+     margin-top: 10px;
+     font-size: 22px;
  }
 
+ .activities a
+ {
+     color: #181818;
+ }
+
+ .activities p
+ {
+     font-size: large;
+ }
  .conteneur4
  {
      display: flex;
      flex-direction: row;
-     justify-content: space-evenly;
+     justify-content: space-between;
      cursor: pointer;
  }
+
+.activity1
+{
+    width: 22%;
+    padding-left: 5px;
+}
+
+.activity2
+{
+    width: 22%;
+    padding-left: 25px;
+}
+
+.activity3
+{
+    width: 22%;
+    padding-left: 25px;
+}
+
+.activity4
+{
+    width: 22%;
+    padding-left: 15px;
+}
 
 
  .conteneur4 img
  {
-     width: 100%;
-     height: 12rem;
      object-fit: cover;
      border-radius: 1rem 1rem 0 0; 
  }
@@ -539,14 +595,52 @@ aside a
 
 .large_activity
 {
-    height: 100%;
-    max-width: 26rem;
+    height: 400px;
+    width: 450px;
 }
 
 .small_activity
 {
-    height: 13rem;
+    height: 150px;
+    width: 450px;
 }
+
+.picture_vieuxport
+{
+    height: 390px;
+    width: 450px;
+}
+.picture_fort
+{
+    height: 160px;
+    width: 450px; 
+}
+.picture_ile
+{
+    padding-top: 120px;
+    height: 120px;
+    width: 450px; 
+}
+
+.picture_calanques
+{
+    height: 390px;
+    width: 450px;
+}
+
+.picture_notredame
+{
+    height: 130px;
+    width: 450px; 
+}
+
+.picture_longchamp
+{
+    padding-top: 60px;
+    height: 180px;
+    width: 450px; 
+}
+
 
 .activity_text
 {
@@ -557,35 +651,6 @@ aside a
 }
 
 
-.picture_vieuxport
-{
-    height: 35.5rem;
-}
-.picture_fort
-{
-    height: 12rem;
-}
-
-.picture_ile
-{
-    height: 12rem;
-}
-
-.picture_calanques
-{
-    height: 35.5rem;
-}
-
-.picture_notredame
-{
-    height: 12rem;
-}
-
-.picture_longchamp
-{
-    height: 12rem;
-}
-
  /* Footer */
  {
     display: flex;
@@ -594,7 +659,7 @@ aside a
  .footer
 {
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: #f2f2f2;
     border: 2px #f2f2f2;
     border-radius: 5px;
@@ -605,7 +670,7 @@ aside a
 .footer h2
 {
     padding-left: 15px;
-    font-size: larger;
+    font-size: 25px;
 }
 
 .about
