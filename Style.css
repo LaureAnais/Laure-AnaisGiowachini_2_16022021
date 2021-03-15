@@ -29,9 +29,6 @@ body
 {
     font-family: "Raleway" , Arial, Helvetica, sans-serif ;
     color: #181818;
-    max-width: 2000px;
-    height: auto;
-    margin: auto;
 }
 
 a
@@ -45,9 +42,9 @@ ul
     list-style-type: none;
 }
 
-#blocpage
+#bloc_page
 {
-    width: 95%;
+    width: 70%;
     height: auto;
     margin: auto;
 }
@@ -68,6 +65,13 @@ p
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 12px; 
+}
+
+.bloc_header, .header
+{
+    width: 70%;
+    height: auto;
+    margin: auto;
 }
 
 
@@ -124,10 +128,10 @@ p
 
 .nav_list, .subscribe 
 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     padding-top: 20px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     color:#444;
     border-top: solid 3px white;
 }
@@ -141,6 +145,9 @@ p
 .subscribe a {
     color: #0065fc;
 }
+
+
+
     /* Nav au survol */ 
 
 .nav_list:hover
@@ -307,42 +314,42 @@ p
     font-size: 26px;
     margin: 5px;
     padding-top: 15px;
+    padding-left: 17px;
 
 }
 article 
 {
     width: 66%;
+    height: 100%;
     background-color: #f2f2f2;
-    padding-left: 25px;
     border-radius: 7px;
     box-shadow: 0px 5px 10px #d9d9d9;
 }
 
-.article h3
+.view_more
 {
     color: #181818;
     font-size: 24px;
-}
-
-.article a
-{
-    color: #181818;
+    padding-left: 45px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 .conteneur2 
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-top: 15px;
+    padding-left: 10px;
     background-color:#f2f2f2;
     border-radius: 10px;
 }
 
 .conteneur2 div {
     background-color: white;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-right: 15px;
-    width: 370px;
-    height: auto;
+    width: 320px;
 }
 
 
@@ -350,7 +357,7 @@ article
 {
     border-radius: 1rem 1rem 0rem 0rem;
     width: 99%;
-    height: 12rem;
+    height: 8rem;
     background-color: white;
     object-fit: cover;
     border-color: white;
@@ -367,13 +374,16 @@ article
 {
    color:black 
 }
-
+.etoiles_marseille
+{
+    padding-top: 0;
+    color: #0065fc;
+}
 .aubergecannebiere
 {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
 }
@@ -382,8 +392,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
 }
@@ -392,8 +401,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
 }
@@ -402,8 +410,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
 }
@@ -413,8 +420,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 100px; 
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
 }
@@ -423,11 +429,43 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
 }
+
+/* Elements survolés */
+.aubergecannebiere:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.hotelduport:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.hotellesmouettes:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.hoteldelamer:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.aubergelepanier:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.hotelamina:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+
 
 
  /* Aside section */
@@ -438,14 +476,12 @@ aside
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     padding: 20px;
-    margin-left: 45px;
-  
+    margin-left: 45px; 
 }
 
 aside h1
 {
 font-size: 26px;
-margin: 5px;
 padding: 10px;
 display: flex;
 justify-content: space-between;
@@ -469,27 +505,30 @@ aside a
     background-color: white;
     object-fit: cover;
 }
+
+/* NE S'APPLIQUE PAS???*/
 .conteneur3
 {
     flex-direction: column;
-    height: auto;
+    justify-content: space-around;
 }
 
 .conteneur3 div 
 {
     margin-left: 10px;
     margin-bottom: 15px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .title_hotel_size
 {
-    font-size: 21px;
+    font-size: 18px;
 }
 .hoteldumatin
 {
     display: flex;
-    height: 28.5%;
+    height: 28%;
+    height: 165px;
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
@@ -501,7 +540,8 @@ aside a
 .hoteldeleau
 {
     display: flex;
-    height: 28.5%;
+    height: 28%;
+    height: 165px;
     padding: 0.375rem;
     background-color: white;
     border: 2px white;
@@ -513,7 +553,8 @@ aside a
 .hotelbleublanc
 {
     display: flex;
-    height: 28.5%;
+    height: 28%;
+    height: 165px;
     padding: 0.375rem;
     background-color:white;
     border: 2px white;
@@ -522,15 +563,30 @@ aside a
     box-shadow: 0 0 16px #0000002e;
 }
 
+.hoteldumatin:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.hoteldeleau:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.hotelbleublanc:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
 .etoiles 
 {
-    padding-top: 25px;
+    padding-top: 10px;
     color: #0065fc;
 }
 
 .etoilegrise
 {
-    padding-top: 25px;
+    
     color: grey;
 }
 
@@ -538,18 +594,15 @@ aside a
 
  .activities
  {
-    margin: 1rem;
-    padding: 1rem; 
-    flex-basis: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
  }
 
  #title_activities
  {
      
      margin-bottom: 25px;
-     margin-top: 10px;
+     margin-top: 25px;
      font-size: 22px;
  }
 
@@ -565,32 +618,29 @@ aside a
  .conteneur4
  {
      display: flex;
-     flex-direction: row;
-     justify-content: space-between;
- }
+     }    
 
 .activity1
 {
-    width: 22%;
-    padding-left: 5px;
+    padding-left: 35px;
+    width: 75%; 
 }
 
 .activity2
 {
-    width: 22%;
-    padding-left: 25px;
+    padding-left: 35px;
+    width: 75%; 
 }
-
 .activity3
 {
-    width: 22%;
-    padding-left: 25px;
+    padding-left: 35px;
+    width: 75%; 
 }
 
 .activity4
 {
-    width: 22%;
-    padding-left: 15px;
+    padding-left: 35px;
+    width: 75%; 
 }
 
 
@@ -604,52 +654,78 @@ aside a
 .large_activity
 {
     height: 400px;
-    width: 450px;
 }
 
 .small_activity
 {
     height: 150px;
-    width: 450px;
+    border-radius: 1rem 1rem 0 0; 
 }
 
 .picture_vieuxport
 {
     height: 390px;
-    width: 450px;
+    width: 100%; 
 }
 .picture_fort
 {
     height: 160px;
-    width: 450px; 
+    width: 100%; 
 }
 .picture_ile
 {
-    padding-top: 120px;
+    margin-top: 120px;
     height: 120px;
-    width: 450px; 
+    width: 100%; 
 }
 
 .picture_calanques
 {
     height: 390px;
-    width: 450px;
+    width: 100%; 
 }
 
 .picture_notredame
 {
     height: 130px;
-    width: 450px; 
+    width: 100%; 
     object-position: top;
 }
 
 .picture_longchamp
 {
-    padding-top: 60px;
+    margin-top: 60px;
     height: 180px;
-    width: 450px; 
+    width: 100%; 
 }
 
+.picture_vieuxport:hover
+{
+    box-shadow: 0px 5px 10px gray;5
+}
+.picture_fort:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+.picture_ile:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.picture_calanques:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.picture_notredame:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.picture_longchamp:hover
+{
+    box-shadow: 0px 5px 10px gray;
+}
 
 .activity_text
 {
@@ -681,22 +757,25 @@ aside a
     padding-left: 15px;
     font-size: 24px;
 }
-
+.footer ul
+{
+    margin-top: 10px;
+    line-height: 28px;
+}
 .about
 {
-    width: 33%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top: 40px;
+    padding-left: 300px;
 }
 
 .accommodation 
 {
-    width: 33%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top: 40px;
 }
 
@@ -705,7 +784,6 @@ aside a
     width: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top: 40px;
 }
 
@@ -733,39 +811,82 @@ footer a:hover
 
  
 @media screen and (max-width: 1024px) {
-#body {
-   width: 95%;
-   height: auto;
-   margin: auto;
-}   
-/*
-    .header_nav {
-        width: auto;
-        text-align: left;
-        flex-flow: wrap;
-       
+    #bloc_page {
+        width: 2000px;
+        height: auto;
+        margin: auto;
+    }   
+
+    .header
+    {
+        margin: 0px;
     }
 
-    .nav_list :hover {
-        border-top: none;
-        padding-top: 0px;
-        border-bottom: solid 3px #0065fc;
-        padding-bottom: 20px;
-    }    
-
-    .subscribe :hover {
-        border-top: none;
-        padding-top: 0px;
+    
+    .large_activity
+    {
+        height: 400px;
+        width: 270px;  
     }
- 
-*/
+
+    .small_activity
+    {
+        height: 150px;
+        width: 270px;  
+        border-radius: 1rem 1rem 0 0; 
+    }
+
+    .picture_vieuxport
+    {   
+        height: 390px;
+        width: 270px; 
+    }
+
+    .picture_fort
+    {
+        height: 160px;
+        width: 270px; 
+    }
+  
+    .picture_ile
+    {
+        margin-top: 120px;
+        height: 120px;
+        width: 270px; 
+    }
+
+    .picture_calanques
+    {
+        height: 390px;
+        width: 270px;  
+    }
+
+    .picture_notredame
+    {
+        height: 130px;
+        width: 270px; 
+        object-position: top;
+    }
+
+    .picture_longchamp
+    {
+        margin-top: 60px;
+        height: 180px;
+        width: 270px; 
+    }
+}
 @media screen and (max-width: 740px) {
     
-    #blocpage {
-        width: 1500px;
+        #bloc_page {
+        width: 95%;
         margin: auto;
         height: auto;
         }   
+
+        .bloc_header, .header
+        {
+            width: 100%;
+        }
     
         .header_nav {
             width: 100%;
@@ -773,18 +894,25 @@ footer a:hover
             flex-direction: column;
             border-top: none;
         }
+
+        .logo, img
+        {
+            height: 30px;
+        }
     
         .nav_list {
-            width: 50%;
+            width: 100%;
             display: flex;
             justify-content: center;
             border-bottom: solid 3px lightgrey;
             padding-bottom: 20px;
+            border-top: none;
         }
         .nav_list:hover {
             border-top: none;
             border-bottom: solid 3px #0065fc;
             padding-bottom: 30px;
+
         }    
     
         .subscribe:hover {
@@ -796,6 +924,7 @@ footer a:hover
             display: flex;
             justify-content: flex-end;
             padding-right: 70px;
+            border-top: none;
         }
 
         .conteneur_filter {
@@ -804,37 +933,152 @@ footer a:hover
             align-items: left;
         }
 
-        .main_accommodation{
-            display:block
+        .main_accommodation {
+            display: block;
+            flex-direction: column-reverse;
+            margin-right: 0;
+            margin-left: 0;
         }
 
-        .conteneur2
+        article {
+            width: 100%;
+        }
+
+        aside {
+            width: 100%;
+        }
+
+
+        .conteneur2 {
+            flex-direction: column;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-top: 5px;
+            padding-left: 5px;
+            background-color: none;
+            border-radius: 10px;
+        }
+
+        .conteneur4 {
+            display: block;
+            flex-direction: column;
+            height: 1800px;
+        }
+
+        .activities
         {
-            flex-direction: column;
+            margin-top: 250px;
         }
 
-        .footer{
-            display:block;
+        #title_activities {
+            margin-bottom: 25px;
+            margin-top: 25px;
+            font-size: 18px;
+        }
+       
+        
+    .activity1 {
+        width: 500px;
+        padding-bottom: 80px;
+        margin-top: 50px;
+    }
+
+    .activity2, {
+        width: 500px;
+        padding-bottom: 120px;
+        margin-top: 120px;
+        padding-top: 120px
+        ;
+    }
+
+    .activity3, {
+        width: 500px;
+        padding-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    .activity4, {
+        width: 500px;
+        padding-bottom: 80px;
+        margin-top: 120px;
+    }
+
+    .large_activity , .small_activity
+    {
+        height: 200px;
+        width: 500px;
+        border-radius: 1rem 1rem 0 0; 
+    }
+    
+    .picture_vieuxport
+    {
+        height: 200px;
+        width: 500px;
+    }
+    .picture_fort
+    {
+        height: 200px;
+        width: 500px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .picture_ile
+    {
+        height: 200px;
+        width: 500px;
+        margin-top: 100px;
+    }
+    
+    .picture_calanques
+    {
+        height: 200px;
+        width: 500px;
+        margin-top: 100px;
+    }
+    
+    .picture_notredame
+    {
+        height: 200px;
+        width: 500px;
+        padding-top: 100px;
+    }
+    
+    .picture_longchamp
+    {
+        height: 200px;
+        width: 500px;
+        margin-top: 100px;
+    }
+    
+
+
+        .footer {
+            display: block;
             flex-direction: column;
+            justify-content: center;
             background-color: #f2f2f2;
             border: 2px #f2f2f2;
             border-radius: 5px;
             height: auto;
             padding-top: 10px;
         }
-        .about
-        {
-            width: 98%;
+        
+        .about {
+            width: auto;
+            padding-left: 25px;
+            margin-top: 20px
         }
 
-        .accommodation 
-        {
-            width: 98%;
+        .accommodation {
+            width: auto;
+            padding-left: 25px;
+            margin-top: 20px
         }
 
-        .help
-        {
-            width: 98%;
+        .help{
+            width: auto;
+            padding-left: 25px;
+            margin-top: 20px;
         }
-
     }        
