@@ -230,8 +230,8 @@ p
     font-size: medium;
 }
 
-#glass {
-    color: white;
+.magnifying_glass {
+    display: none;
 }
 
 /* Filter Section */
@@ -859,6 +859,7 @@ footer a:hover
         flex-wrap: wrap;
         flex-direction: row;
         align-items: left;
+        justify-content: space-around;
     }
 
 /* MAIN ACCOMMODATION MEDIA LAPTOP*/
@@ -866,22 +867,16 @@ footer a:hover
         display: flex;
         flex-direction: column-reverse;
     }
-    aside {
-        width: 100%;
-        flex-direction: row;
-    }  
 
     /* ARTICLE MEDIA TABLET*/
     article {
         width: 100%;
     }
 
-    .conteneur2 {
-        padding-left: 5px;
-    }
 /* ASIDE MEDIA TABLET*/
     aside {
         width: 100%;
+        flex-direction: row;
         margin-left: 5px;
         margin-bottom: 40px;
     }  
@@ -1012,6 +1007,7 @@ footer a:hover
     .header
     {
         margin: 0px;
+        background-position: 5% 5%;
     }  
 
     .bloc_header, .header
@@ -1024,11 +1020,8 @@ footer a:hover
         display: flex;
         flex-direction: column;
         border-top: none;
-    }
-
-    .logo, img
-    {
-        height: 30px;
+        margin-right: 0;
+        padding-left: 0;
     }
 
     .nav_list {
@@ -1064,41 +1057,52 @@ footer a:hover
         align-items: left;
     }
 
+    .magnifying_glass {
+        display: flex;
+        width: 40px;
+        background-color: #0065fc;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        height: 37px;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .icon_right {
+        display: none;
+    }
+
+
 /* MAIN ACCOMMODATION MEDIA TABLET*/
     #main_accommodation {
         display: flex;
         flex-direction: column-reverse;
     }
-    aside {
-        width: 100%;
-        flex-direction: row;
-    }  
 
-    /* ARTICLE MEDIA TABLET*/
+/* ARTICLE MEDIA TABLET*/
     article {
-        width: 950px;
+        width: 95%;
     }
 
-    .conteneur2 {
-        padding-left: 5px;
-    }
+
 /* ASIDE MEDIA TABLET*/
     aside {
-        width: 100%;
-        margin-left: 5px;
-        margin-bottom: 40px;
+        width: 90%;
+        flex-direction: column;
     }  
 
     .hoteldumatin {
-        width: 33%;
+        width: 100%;
     }
 
     .hoteldeleau {
-        width: 33%;
+        width: 100%;
     }
 
     .hotelbleublanc {
-        width: 33%;
+        width: 100%;
     }
 
     .conteneur3 {
@@ -1223,6 +1227,12 @@ footer a:hover
             flex-direction: column;
             border-top: none;
         }
+        
+        .header
+        {
+            margin: 0px;
+            background-position: 5% 5%;
+        }  
 
         .logo, img
         {
@@ -1264,23 +1274,18 @@ footer a:hover
             margin-top: 25px;
         }
 
-        .text_filter {
-            justify-content: flex-start;
-        }
-
 
         .conteneur_filter {
            justify-content: space-between;
            display: flex;
            flex-wrap: wrap;
-           row-gap: 10px;
+           row-gap: 5px;
+           width: 70%;
         }
 
-        .block_filter {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 10px;
+        .text_filter {
+            position: absolute;
+            top: 390px;
         }
 
         #search_button {
@@ -1301,81 +1306,65 @@ footer a:hover
 /* MAIN ACCOMMODATION MEDIA PHONE */
 
         #main_accommodation {
-            display: block;
+            display: flex;
             flex-direction: column-reverse;
             margin-right: 0;
             margin-left: 0;
         }
 /* ARTICLE MEDIA PHONE */
         article {
-            width: 100%;
-            height: 1000px;
+            width: 95%;
+            margin-left: 10px;
+            background-color: white;
+            box-shadow: none;
         }
-/* ASIDE MEDIA PHONE */
-        aside {
-            width: 100%;
-            height: 800px;
-            margin-left: 0;
-        }
-
-        .conteneur3 img {
-            width: 100%;
-            height: 150px;   
-        }
-
-        .conteneur3 div {
-            width: 500px;
-            height: 280px;
-        }
-
-
-        .hoteldumatin {
-            display: block;    
-
-            }
-
-        .hoteldeleau {
-            display: block;
-        
-            }
-
-        .hotelbleublanc {
-            display: block;
-        
-            }
-
-        .etoiles {
-            padding-top: 0;
-            }
-
 
         .conteneur2 {
-            flex-direction: column;
             display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding-top: 5px;
-            padding-left: 5px;
-            background-color: none;
-            border-radius: 10px;
-        }
-
-        .conteneur2 div {
-            background-color: white;
-            margin-bottom: 10px;
-            margin-right: 15px;
-            width: 500px;
-        }
-
-        .conteneur4 {
-            display: block;
             flex-direction: column;
-            height: 1800px;
+            background-color: white;
+            padding-left: 0;
         }
 
-        .conteneur3
-        {
+        .aubergecannebiere {
+            width: auto;
+            margin-left: 10px;
         }
+
+        .hotelduport {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .hotellesmouettes {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .hoteldelamer {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .aubergelepanier {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .hotelamina {
+            width: auto;
+            margin-left: 10px;
+        }
+
+/* ASIDE MEDIA PHONE */
+        aside {
+            width: 90%;
+        }
+
+        .conteneur3 {
+            flex-direction: column;
+        }
+
 /* ACTIVITIES MEDIA PHONE */
         .activities
         {
@@ -1486,7 +1475,7 @@ footer a:hover
 
         .help{
             width: auto;
-            padding-left: 25px;
+            padding-left: 5px;
             margin-top: 20px;
         }
     }        
