@@ -406,7 +406,7 @@ article
     padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
-    height: 220px;
+    height: 235px;
     width: 28%;
 }
 
@@ -417,7 +417,7 @@ article
     padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
-    height: 220px;
+    height: 235px;
     width: 28%;
 }
 
@@ -428,7 +428,7 @@ article
     padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
-    height: 220px;
+    height: 235px;
     width: 28%;
 }
 
@@ -439,7 +439,7 @@ article
     padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
-    height: 220px;
+    height: 235px;
     width: 28%;
 }
 
@@ -451,7 +451,7 @@ article
     padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
-    height: 220px;
+    height: 235px;
     width: 28%;
 }
 
@@ -462,7 +462,7 @@ article
     padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
-    height: 220px;
+    height: 235px;
     width: 28%;
 }
 
@@ -538,7 +538,6 @@ aside a
     object-fit: cover;
 }
 
-/* NE S'APPLIQUE PAS???*/
 .conteneur3
 {
     flex-direction: column;
@@ -777,7 +776,7 @@ aside a
     background-color: #f2f2f2;
     border: 2px #f2f2f2;
     border-radius: 5px;
-    height: 300px;
+    height: 320px;
     flex-basis: auto;
 }   
 
@@ -838,7 +837,51 @@ footer a:hover
     padding-bottom: 15%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
+    #bloc_page {
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }   
+
+    .header {
+        margin: 5px;
+    }  
+
+    .bloc_header, .header {
+        width: 95%;
+    }
+
+    .conteneur_filter {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: left;
+        justify-content: space-around;
+    }
+
+    .footer {
+        height: 320px;   
+    }   
+    .about {
+        width: 33%;
+        padding-left: 130px;
+    }
+
+    .accommodation {
+        width: 33%;
+    }
+
+    .help {
+        width: 33%;
+    }
+
+    .footer ul {
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1065px) {    
     #bloc_page {
         width: 95%;
         height: auto;
@@ -862,10 +905,12 @@ footer a:hover
         justify-content: space-around;
     }
 
-/* MAIN ACCOMMODATION MEDIA LAPTOP*/
+/* MAIN ACCOMMODATION MEDIA TABLET*/
     #main_accommodation {
         display: flex;
         flex-direction: column-reverse;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     /* ARTICLE MEDIA TABLET*/
@@ -876,21 +921,13 @@ footer a:hover
 /* ASIDE MEDIA TABLET*/
     aside {
         width: 95%;
-        flex-direction: row;
-        margin-left: 5px;
-        margin-bottom: 40px;
-    }  
-
-    .hoteldumatin {
-        width: 33%;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 
-    .hoteldeleau {
+    .hoteldumatin, .hoteldeleau, .hotelbleublanc {
         width: 33%;
-    }
-
-    .hotelbleublanc {
-        width: 33%;
+        display: flex;
     }
 
     .conteneur3 {
@@ -898,77 +935,137 @@ footer a:hover
         flex-direction: row;
     }
 
+/* ACTIVITIES MEDIA TABLET */
+.activities
+{
+margin-right: 0px;
+margin-left: 0px;
+}
+
+#title_activities
+{
+    margin-left: 25px;
+}
+
+.conteneur4
+{
+   
+    margin: auto;
+    width: 95%;
+}   
+
+#activitypart1 
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 780px;
+}
+
+#activitypart2
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 780px;
+    margin-bottom: 0px;
+}
 
 
+.activity1 {
+    width: 100%;
+    height: 220px;
+}
 
-/* ACTIVITIES MEDIA LAPTOP*/
+.activity2 {
+    width: 100%;
+    padding-left: 0px;
+    height: 500px;
+}
 
-    .conteneur4 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+.activity2 .activity:first-child img 
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0 40%;
+}
 
-    .activity1
-    {
-        padding-left: 5px;
-        width: 400px; 
-    }
+.activity2 .activity:last-child img 
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0 15%;
+}
+.activity2 .activity:last-child  
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.activity3 {
+    width: 100%;
+    height: 220px;
+    padding-left: 0px;
+}
 
-    .activity2
-    {
-        padding-left: 35px;
-        width: 400px; 
-    }
-    .activity3
-    {
-        width: 400px; 
-        padding-left: 0px;
-    }
+.activity4 {
+    width: 100%;
+    padding-left: 0;
+    height: 500px;
+    padding-left: 0px;
+}
 
-    .activity4
-    {
-        padding-left: 35px;
-        padding-right: 15px;
-        width: 400px; 
-    }
+.conteneur4 img
+{
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0; 
+    width: 100%;
+    height: 200px;
+}
 
-    .picture_vieuxport
-    {
-        height: 290px;
-        width: 400px; 
-    }
-    .picture_fort
-    {
-        height: 120px;
-        width: 400px; 
-    }
-    .picture_ile
-    {
-        margin-top: 40px;
-        height: 90px;
-        width: 400px;  
-    }
+.activity2 .activity img 
+{
+    border-radius: 1rem 1rem 0 0; 
+}
 
-    .picture_calanques
-    {
-        height: 290px;
-        width: 400px; 
-    }
+.activity4 .activity:first-child img 
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0 20%;
+}
 
-    .picture_notredame
-    {
-        height: 100px;
-        width: 400px;  
-        object-position: top;
-    }
+.activity4 .activity:first-child 
+{
+    margin-top: 0px;
+}
 
-    .picture_longchamp
-    {
-        margin-top: 30px;
-        height: 110px;
-        width: 400px;  
-    }
+.activity4 .activity:last-child img 
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0 14%;
+}
+
+.activity4 .activity:last-child 
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.activity_text
+{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    margin: auto;
+}
+
 
 
 /* FOOTER MEDIA LAPTOP*/
@@ -989,6 +1086,7 @@ footer a:hover
 
     .help {
         margin-left: 30px ;
+        width: 33%;
     }
 
     footer ul {
@@ -997,7 +1095,7 @@ footer a:hover
 
 
 } 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     #bloc_page {
         width: 95%;
         height: auto;
@@ -1036,8 +1134,13 @@ footer a:hover
         border-top: none;
         border-bottom: solid 3px #0065fc;
         padding-bottom: 30px;
+        color:#0065fc;
 
     }    
+    .nav_list a:hover
+    {
+        color: #0065fc;
+    }
 
     .subscribe:hover {
         border-top: none;
@@ -1064,10 +1167,10 @@ footer a:hover
         color: white;
         font-weight: bold;
         border: none;
-        border-radius: 0 1rem 1rem 0;
+        border-radius: 1rem;
         height: 37px;
         align-items: center;
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .icon_right {
@@ -1091,29 +1194,18 @@ footer a:hover
 
 
 /* ASIDE MEDIA TABLET*/
-    aside {
-        width: 95%;
-        flex-direction: column;
-    }  
+aside {
+    width: 93%;
+    padding: 10px;
+}
 
-    .hoteldumatin {
-        width: 100%;
-    }
+.hoteldumatin, .hoteldeleau, .hotelbleublanc {
+    width: 95%;
+}
 
-    .hoteldeleau {
-        width: 100%;
-    }
-
-    .hotelbleublanc {
-        width: 100%;
-    }
-
-    .conteneur3 {
-        display: flex;
-        flex-direction: row;
-    }
-
-
+.conteneur3 {
+    flex-direction: column;
+}
 
 
 /* ACTIVITIES MEDIA TABLET*/
@@ -1171,7 +1263,7 @@ footer a:hover
     .picture_calanques
     {
         height: 290px;
-        width: 400px; 
+        width: 390px; 
     }
 
     .picture_notredame
@@ -1215,7 +1307,7 @@ footer a:hover
 
 
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 740px) {
     
         #bloc_page {
         width: 100%;
@@ -1257,6 +1349,7 @@ footer a:hover
             border-top: none;
             border-bottom: solid 3px #0065fc;
             padding-bottom: 30px;
+            color: #0065fc;
 
         }    
     
@@ -1286,12 +1379,13 @@ footer a:hover
            display: flex;
            flex-wrap: wrap;
            row-gap: 5px;
-           width: 70%;
+           width: 100%;
         }
 
         .text_filter {
             position: absolute;
-            top: 390px;
+            top: 375px;
+            margin-top: 20px;
         }
 
         #search_button {
@@ -1359,7 +1453,7 @@ footer a:hover
             flex-direction: column;
         }
 
-/* ACTIVITIES MEDIA PHONE */
+        /* ACTIVITIES MEDIA PHONE */
         .activities
         {
         margin-right: 0px;
@@ -1493,6 +1587,7 @@ footer a:hover
 
         
     
+
 /* FOOTER MEDIA PHONE */
 
         .footer {
