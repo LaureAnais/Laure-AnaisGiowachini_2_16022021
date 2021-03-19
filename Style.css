@@ -368,7 +368,8 @@ article
 
 .main_accommodation img
 {
-    border-radius: 1rem 1rem 0rem 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 99%;
     height: 8rem;
     background-color: white;
@@ -402,7 +403,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     height: 220px;
@@ -413,7 +414,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     height: 220px;
@@ -424,7 +425,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     height: 220px;
@@ -435,7 +436,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     height: 220px;
@@ -447,7 +448,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     height: 220px;
@@ -458,7 +459,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 4px 5px 6px;
     box-shadow: 0px 5px 10px #d9d9d9;
     border-radius: 1rem 1rem 1rem 1rem;
     height: 220px;
@@ -646,122 +647,121 @@ aside a
  .conteneur4
  {
      display: flex;
-     }    
+     justify-content: space-between;
+}    
+
+#activitypart1, #activitypart2
+{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .activity1
 {
-    padding-left: 5px;
-    width: 75%; 
+    border-radius: 1rem 1rem 0 0; 
+    width: 46%; 
+    height: 445px;
 }
 
 .activity2
 {
-    padding-left: 35px;
-    width: 75%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0; 
+    width: 46%; 
+    height: 440px;
 }
+
 .activity3
 {
-    padding-left: 35px;
-    width: 75%; 
+    border-radius: 1rem 1rem 0 0; 
+    width: 46%; 
+    height: 445px;
 }
-
 .activity4
 {
-    padding-left: 35px;
-    padding-right: 15px;
-    width: 75%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0; 
+    width: 46%; 
+    height: 440px;
 }
-
 
  .conteneur4 img
  {
      object-fit: cover;
      border-radius: 1rem 1rem 0 0; 
+     width: 100%;
+     height: 390px;
  }
 
-
-.large_activity
-{
-    height: 400px;
-}
-
-.small_activity
-{
-    height: 150px;
-    border-radius: 1rem 1rem 0 0; 
-}
-
-.picture_vieuxport
-{
-    height: 390px;
-    width: 100%; 
-}
-.picture_fort
-{
-    height: 160px;
-    width: 100%; 
-}
-.picture_ile
-{
-    margin-top: 120px;
-    height: 120px;
-    width: 100%; 
-}
-
-.picture_calanques
-{
-    height: 390px;
-    width: 100%; 
-}
-
-.picture_notredame
-{
-    height: 130px;
-    width: 100%; 
-    object-position: top;
-}
-
-.picture_longchamp
-{
-    margin-top: 60px;
+ .activity2 .activity:first-child img 
+ {
+    width: 100%;
     height: 180px;
-    width: 100%; 
+    object-fit: cover;
+    object-position: 0 40%;
+ }
+
+ .activity2 .activity:last-child img 
+ {
+     width: 100%;
+     height: 120px;
+     object-fit: cover;
+     object-position: 0 15%;
+ }
+
+ .activity2 .activity img 
+ {
+    border-radius: 1rem 1rem 0 0; 
+ }
+
+ .activity4 .activity:first-child img 
+ {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: 0 20%;
+ }
+
+ .activity4 .activity:last-child img 
+ {
+     width: 100%;
+     height: 160px;
+     object-fit: cover;
+     object-position: 0 14%;
+ }
+
+ .activity4 .activity img 
+ {
+    border-radius: 1rem 1rem 0 0; 
+ }
+
+.activity
+{
+    border-radius: 1rem 1rem 1rem 1rem; 
+    box-shadow: 0 0 10px #d9d9d9;
 }
 
-.picture_vieuxport:hover
-{
-    box-shadow: 0px 5px 10px gray;5
-}
-.picture_fort:hover
-{
-    box-shadow: 0px 5px 10px gray;
-}
-.picture_ile:hover
+
+.activity:hover 
 {
     box-shadow: 0px 5px 10px gray;
 }
 
-.picture_calanques:hover
-{
-    box-shadow: 0px 5px 10px gray;
-}
 
-.picture_notredame:hover
-{
-    box-shadow: 0px 5px 10px gray;
-}
-
-.picture_longchamp:hover
-{
-    box-shadow: 0px 5px 10px gray;
-}
 
 .activity_text
 {
-    padding: 1rem 0.5rem 1rem 1.5rem;
-    border-radius: 0 0 1rem 1rem; 
-    background-color: white;
-    box-shadow: 0px 5px 10px #d9d9d9;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 85%;
+    margin: auto;
 }
 
 
@@ -797,7 +797,7 @@ aside a
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    padding-left: 330px;
+    padding-left: 370px;
 }
 
 .accommodation 
@@ -875,7 +875,7 @@ footer a:hover
 
 /* ASIDE MEDIA TABLET*/
     aside {
-        width: 100%;
+        width: 95%;
         flex-direction: row;
         margin-left: 5px;
         margin-bottom: 40px;
@@ -979,7 +979,7 @@ footer a:hover
     }
 
     .about {
-        padding-left: 20px;
+        padding-left: 30px;
         width: 33%;
     }
 
@@ -997,7 +997,7 @@ footer a:hover
 
 
 } 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     #bloc_page {
         width: 95%;
         height: auto;
@@ -1045,10 +1045,10 @@ footer a:hover
     }   
         
     .subscribe {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 70px;
-    border-top: none;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 70px;
+        border-top: none;
     }
 
     .conteneur_filter {
@@ -1074,6 +1074,9 @@ footer a:hover
         display: none;
     }
 
+    #search_button {
+        margin-left: 10px;
+    }
 
 /* MAIN ACCOMMODATION MEDIA TABLET*/
     #main_accommodation {
@@ -1083,13 +1086,13 @@ footer a:hover
 
 /* ARTICLE MEDIA TABLET*/
     article {
-        width: 95%;
+        width: 100%;
     }
 
 
 /* ASIDE MEDIA TABLET*/
     aside {
-        width: 90%;
+        width: 95%;
         flex-direction: column;
     }  
 
@@ -1114,11 +1117,14 @@ footer a:hover
 
 
 /* ACTIVITIES MEDIA TABLET*/
+    .activities {
+        margin-left: 0;
+    }
 
     .conteneur4 {
         display: flex;
         flex-wrap: wrap;
-        width: 950px;
+        width: 930px;
     }
 
     .activity1
@@ -1191,7 +1197,7 @@ footer a:hover
     }
 
     .about {
-        padding-left: 20px;
+        padding-left: 30px;
         width: 33%;
     }
 
@@ -1209,7 +1215,7 @@ footer a:hover
 
 
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 576px) {
     
         #bloc_page {
         width: 100%;
@@ -1326,39 +1332,27 @@ footer a:hover
             padding-left: 0;
         }
 
-        .aubergecannebiere {
-            width: auto;
-            margin-left: 10px;
+        .conteneur2 div {
+            margin-right: 0px;
         }
 
-        .hotelduport {
+        .aubergecannebiere, .hotelduport, .hotellesmouettes, 
+        .hoteldelamer, .aubergelepanier, .hotelamina {
             width: auto;
-            margin-left: 10px;
         }
 
-        .hotellesmouettes {
-            width: auto;
-            margin-left: 10px;
-        }
-
-        .hoteldelamer {
-            width: auto;
-            margin-left: 10px;
-        }
-
-        .aubergelepanier {
-            width: auto;
-            margin-left: 10px;
-        }
-
-        .hotelamina {
-            width: auto;
-            margin-left: 10px;
+        .view_more {
+            padding-left: 10px;
         }
 
 /* ASIDE MEDIA PHONE */
         aside {
-            width: 90%;
+            width: 93%;
+            padding: 10px;
+        }
+
+        .hoteldumatin, .hoteldeleau, .hotelbleublanc {
+            width: 95%;
         }
 
         .conteneur3 {
@@ -1368,85 +1362,136 @@ footer a:hover
 /* ACTIVITIES MEDIA PHONE */
         .activities
         {
-            margin-top: 250px;
+        margin-right: 0px;
+        margin-left: 0px;
         }
 
-        #title_activities {
-            margin-bottom: 25px;
-            margin-top: 25px;
-            font-size: 18px;
-        }
-       
-        
-        .activity1 {
-            width: 500px;
-            padding-bottom: 80px;
-            margin-top: 50px;
-        }
-
-        .activity2, {
-            width: 500px;
-            padding-bottom: 120px;
-        }
-
-        .activity3, {
-            width: 500px;
-        }
-
-        .activity4, {
-            width: 500px;
-        }
-
-        .large_activity , .small_activity
+        #title_activities
         {
+            margin-left: 25px;
+        }
+        
+        .conteneur4
+        {
+           
+            margin: auto;
+            width: 95%;
+        }   
+
+        #activitypart1 
+        {
+            display: flex;
+            flex-direction: column;
+            width: 98%;
+            height: 780px;
+        }
+
+        #activitypart2
+        {
+            display: flex;
+            flex-direction: column;
+            width: 98%;
+            height: 810px;
+            margin-bottom: 90px;
+        }
+
+
+        .activity1 {
+            width: 100%;
+            height: 220px;
+        }
+
+        .activity2 {
+            width: 100%;
+            padding-left: 5px;
+            height: 500px;
+        }
+
+        .activity2 .activity:first-child img 
+        {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: 0 40%;
+        }
+
+        .activity2 .activity:last-child img 
+        {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: 0 15%;
+        }
+        .activity2 .activity:last-child  
+        {
+            margin-top: 25px;
+        }
+        .activity3 {
+            width: 100%;
+            height: 220px;
+            margin-top: 100px;
+            padding-left: 3px;
+        }
+
+        .activity4 {
+            width: 100%;
+            padding-left: 0;
+            height: 500px;
+            padding-left: 3px;
+        }
+
+        .conteneur4 img
+        {
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0; 
+            width: 100%;
             height: 200px;
-            width: 500px;
+        }
+
+        .activity2 .activity img 
+        {
             border-radius: 1rem 1rem 0 0; 
         }
+
+        .activity4 .activity:first-child img 
+        {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: 0 20%;
+        }
+
+        .activity4 .activity:first-child 
+        {
+            margin-top: 70px;
+        }
+
+        .activity4 .activity:last-child img 
+        {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: 0 14%;
+        }
+
+        .activity4 .activity:last-child 
+        {
+            margin-top: 35px;
+        }
+
+
+       
+
+        .activity_text
+        {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 95%;
+            margin: auto;
+        }
+
         
-        .picture_vieuxport
-        {
-            height: 200px;
-            width: 500px;
-        }
-        .picture_fort
-        {
-            height: 200px;
-            width: 500px;
-            margin-top: 100px;
-            margin-bottom: 50px;
-        }
-        .picture_ile
-        {
-            height: 200px;
-            width: 500px;
-            margin-top: 100px;
-            padding-bottom: 300px;
-        }
-        
-        .picture_calanques
-        {
-            height: 200px;
-            width: 500px;
-            margin-top: 100px;
-            padding-bottom: 300px;
-        }
-        
-        .picture_notredame
-        {
-            height: 200px;
-            width: 500px;
-            padding-top: 100px;
-            padding-bottom: 300px;
-        }
-        
-        .picture_longchamp
-        {
-            height: 200px;
-            width: 500px;
-            margin-top: 100px;
-            padding-bottom: 300px;
-        }
     
 /* FOOTER MEDIA PHONE */
 
