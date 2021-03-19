@@ -712,7 +712,7 @@ aside a
      width: 100%;
      height: 120px;
      object-fit: cover;
-     object-position: 0 15%;
+     object-position: 0 10%;
  }
 
  .activity2 .activity img 
@@ -1215,7 +1215,7 @@ footer a:hover
 
 
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
     
         #bloc_page {
         width: 100%;
