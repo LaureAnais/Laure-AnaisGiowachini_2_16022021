@@ -1095,6 +1095,36 @@ margin-left: 0px;
 
 
 } 
+
+@media screen and (max-width: 1064px) {
+/* MAIN ACCOMMODATION MEDIA TABLET*/
+    #main_accommodation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* ARTICLE MEDIA TABLET*/
+    article {
+        width: 100%;
+    }
+
+
+    /* ASIDE MEDIA TABLET*/
+    aside {
+        width: 97.5%;
+        padding: 10px;
+    }
+
+    .hoteldumatin, .hoteldeleau, .hotelbleublanc {
+        width: 95%;
+        height: auto;
+    }
+
+    .conteneur3 {
+        flex-direction: row;
+    }
+
+}    
 @media screen and (max-width: 750px) {
     #bloc_page {
         width: 95%;
