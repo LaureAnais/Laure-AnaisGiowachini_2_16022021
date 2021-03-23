@@ -1337,7 +1337,7 @@ aside {
 
 
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 650px) {
     
         #bloc_page {
         width: 100%;
@@ -1409,12 +1409,12 @@ aside {
            display: flex;
            flex-wrap: wrap;
            row-gap: 5px;
-           width: 100%;
+           width: 80%;
         }
 
         .text_filter {
             position: absolute;
-            top: 375px;
+            top: 405px;
             margin-top: 20px;
         }
 
@@ -1471,17 +1471,26 @@ aside {
 
 /* ASIDE MEDIA PHONE */
         aside {
-            width: 93%;
-            padding: 10px;
+            width: 92%;
+            padding: 6px;
+            margin-left: 10px;
+            margin-right: 5px;
         }
 
         .hoteldumatin, .hoteldeleau, .hotelbleublanc {
             width: 95%;
+            height: 150px;
         }
 
         .conteneur3 {
             flex-direction: column;
         }
+
+        .conteneur3 img {
+            height: 140px;
+            padding-bottom: 0;
+        } 
+
 
         /* ACTIVITIES MEDIA PHONE */
         .activities
