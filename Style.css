@@ -1230,7 +1230,8 @@ aside {
 }
 
 .hoteldumatin, .hoteldeleau, .hotelbleublanc {
-    width: 95%;
+    width: 97%;
+    height: 200px;
 }
 
 .conteneur3 {
@@ -1658,3 +1659,11 @@ aside {
             margin-top: 20px;
         }
     }        
+
+    @media screen and (max-width: 325px) {
+        text_filter {
+            position: absolute;
+            top: 440px;
+            margin-top: 20px;
+        }
+    }
