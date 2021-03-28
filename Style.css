@@ -58,7 +58,7 @@ section h1, footer h1, nav a
 h2
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: 12px;
+    font-weight: 16px;
 }
 
 p
@@ -323,7 +323,7 @@ p
 
 
 
-.marseille_accommodation h1
+.marseille_accommodation h2
 {
     font-size: 26px;
     margin: 5px;
@@ -366,7 +366,7 @@ article
 }
 
 
-.main_accommodation img
+.main-accommodation img
 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -511,7 +511,7 @@ aside
     margin-left: 45px; 
 }
 
-aside h1
+aside h2
 {
 font-size: 26px;
 padding: 10px;
