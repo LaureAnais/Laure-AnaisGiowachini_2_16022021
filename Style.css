@@ -52,6 +52,7 @@ ul
 section h1, footer h1, nav a 
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
 }
 
 h2
@@ -358,7 +359,8 @@ article
     margin-right: 15px;
 }
 
-#main_accommodation img
+
+.marseille-class img
 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
