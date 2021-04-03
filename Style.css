@@ -1,15 +1,15 @@
 /* Définition des polices personnalisées */
 @font-face
 {
-font-family: Raleway;
-src: url('polices/Raleway-Regular.ttf') format(truetype);
+font-family: "Raleway";
+src: url('polices/Raleway-Regular.ttf') format('truetype');
 font-weight: 400;
 }
 
 @font-face
 {
-font-family: Raleway;
-src: url('polices/Raleway-Bold.ttf') format(truetype);
+font-family: "Raleway";
+src: url('polices/Raleway-Bold.ttf') format('truetype');
 font-weight: 700;
 }
 
@@ -52,19 +52,19 @@ ul
 section h1, footer h1, nav a 
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: Raleway-Bold;
+    font-weight: 'Raleway-Bold';
 }
 
 h2
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: 16px;
+    font-size: 16px;
 }
 
 p
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: 12px; 
+    font-size: 12px; 
 }
 
 .bloc_header, .header
@@ -81,7 +81,6 @@ p
     display: flex;
     justify-content: space-between;
     align-items: flex-end; 
-
 }
 
 .header 
@@ -397,7 +396,7 @@ article
 {
     padding-top: 0;
     color: #0065fc;
-    size: 1rem;
+    resize: 1rem;
 }
 .aubergecannebiere
 {
@@ -765,10 +764,6 @@ aside a
 
 
  /* Footer */
- {
-    display: flex;
-}
-
  .footer
 {
     display: flex;
@@ -855,7 +850,7 @@ footer a:hover
     .conteneur_filter {
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: left;
+        align-items: flex-start;
         justify-content: space-around;
     }
 
@@ -901,7 +896,7 @@ footer a:hover
     .conteneur_filter {
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: left;
+        align-items: flex-start;
         justify-content: space-around;
     }
 
@@ -1124,7 +1119,25 @@ margin-left: 0px;
         flex-direction: row;
     }
 
-}    
+}   
+
+@media screen and (max-width: 770px) {
+    aside {
+        width: 97%;
+        padding: 10px;
+    }
+    
+    .hoteldumatin, .hoteldeleau, .hotelbleublanc {
+        width: 97%;
+        height: 150px;
+    }
+    
+    .conteneur3 {
+        flex-direction: column;
+    }
+}
+
+
 @media screen and (max-width: 750px) {
     #bloc_page {
         width: 95%;
@@ -1187,7 +1200,7 @@ margin-left: 0px;
     .conteneur_filter {
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: left;
+        align-items:flex-start;
     }
 
     .magnifying_glass {
@@ -1425,7 +1438,6 @@ aside {
 
         .icon_right {
             border: none;
-            background-color: none;
         }
 
         .glass {
@@ -1469,6 +1481,9 @@ aside {
         .view_more {
             padding-left: 10px;
         }
+        .marseille_accommodation h2 {
+            padding-left: 0px;
+        }
 
 /* ASIDE MEDIA PHONE */
         aside {
@@ -1502,7 +1517,7 @@ aside {
 
         #title_activities
         {
-            margin-left: 25px;
+            margin-left: 15px;
         }
         
         .conteneur4
@@ -1612,9 +1627,6 @@ aside {
         {
             margin-top: 35px;
         }
-
-
-       
 
         .activity_text
         {
