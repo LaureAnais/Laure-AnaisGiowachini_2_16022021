@@ -52,7 +52,6 @@ ul
 section h1, footer h1, nav a 
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: 'Raleway-Bold';
 }
 
 h2
@@ -77,11 +76,6 @@ p
 
 /* Header */
 
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; 
-}
 
 .header 
 {
@@ -396,7 +390,7 @@ article
 {
     padding-top: 0;
     color: #0065fc;
-    resize: 1rem;
+    height: 1rem;
 }
 .aubergecannebiere
 {
